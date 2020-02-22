@@ -38,9 +38,6 @@ student averageScore;
 */
 void getMainChoice();
 void output(int);
-void putScreenBuffer();
-
-char scBuffer[100][100];
 
 
 inline void clearAll(){
@@ -48,10 +45,10 @@ inline void clearAll(){
     system("cls");
 }
 
-inline void successPrompt(){
-    printf("操作完成!\n");
-    system("pause");
-}
+	inline void successPrompt(){
+		printf("操作完成!\n");
+		system("pause");
+	}
 
 inline int numberError(char *n){
     if (strlen(n)!=10) return 1;
